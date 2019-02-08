@@ -11,14 +11,14 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
+//initiation
     ImageView hatImage;
     ImageView earsImage;
     ImageView armsImage;
     ImageView noseImage;
     ImageView glassesImage;
     ImageView shoesImage;
-    ImageView mouthimage;
+    ImageView mouthImage;
     ImageView mustacheImage;
     ImageView eyesImage;
     ImageView eyebrowsImage;
@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         noseImage = (ImageView) findViewById(R.id.imageViewNose);
         glassesImage = (ImageView) findViewById(R.id.imageViewGlasses);
         shoesImage = (ImageView) findViewById(R.id.imageViewShoes);
-        mouthimage = (ImageView) findViewById(R.id.imageViewMouth);
+        mouthImage = (ImageView) findViewById(R.id.imageViewMouth);
         mustacheImage = (ImageView) findViewById(R.id.imageViewMustache);
         eyesImage = (ImageView) findViewById(R.id.imageViewEyes);
         eyebrowsImage = (ImageView) findViewById(R.id.imageViewEyebrows);
@@ -46,14 +46,14 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
-
+        //save state of visibility of images, key:value pair
         outState.putInt("Hat", hatImage.getVisibility());
         outState.putInt("Ears", earsImage.getVisibility());
         outState.putInt("Arms", armsImage.getVisibility());
         outState.putInt("Nose", noseImage.getVisibility());
         outState.putInt("Glasses", glassesImage.getVisibility());
         outState.putInt("Shoes", shoesImage.getVisibility());
-        outState.putInt("Mouth", mouthimage.getVisibility());
+        outState.putInt("Mouth", mouthImage.getVisibility());
         outState.putInt("Mustache", mustacheImage.getVisibility());
         outState.putInt("Eyes", eyesImage.getVisibility());
         outState.putInt("Eyebrows", eyebrowsImage.getVisibility());
@@ -63,14 +63,14 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onRestoreInstanceState(Bundle inState) {
         super.onRestoreInstanceState(inState);
-
+        //summon value of image with key
         hatImage.setVisibility(inState.getInt("Hat"));
         earsImage.setVisibility(inState.getInt("Ears"));
         armsImage.setVisibility(inState.getInt("Arms"));
         noseImage.setVisibility(inState.getInt("Nose"));
         glassesImage.setVisibility(inState.getInt("Glasses"));
         shoesImage.setVisibility(inState.getInt("Shoes"));
-        mouthimage.setVisibility(inState.getInt("Mouth"));
+        mouthImage.setVisibility(inState.getInt("Mouth"));
         mustacheImage.setVisibility(inState.getInt("Mustache"));
         eyesImage.setVisibility(inState.getInt("Eyes"));
         eyebrowsImage.setVisibility(inState.getInt("Eyebrows"));
