@@ -28,16 +28,17 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        hatImage = (ImageView) findViewById(R.id.imageViewHat);
-        earsImage = (ImageView) findViewById(R.id.imageViewEars);
-        armsImage = (ImageView) findViewById(R.id.imageViewArms);
-        noseImage = (ImageView) findViewById(R.id.imageViewNose);
-        glassesImage = (ImageView) findViewById(R.id.imageViewGlasses);
-        shoesImage = (ImageView) findViewById(R.id.imageViewShoes);
-        mouthImage = (ImageView) findViewById(R.id.imageViewMouth);
-        mustacheImage = (ImageView) findViewById(R.id.imageViewMustache);
-        eyesImage = (ImageView) findViewById(R.id.imageViewEyes);
-        eyebrowsImage = (ImageView) findViewById(R.id.imageViewEyebrows);
+        //create these images to use them later when changing orientation
+        hatImage = findViewById(R.id.imageViewHat);
+        earsImage = findViewById(R.id.imageViewEars);
+        armsImage = findViewById(R.id.imageViewArms);
+        noseImage = findViewById(R.id.imageViewNose);
+        glassesImage = findViewById(R.id.imageViewGlasses);
+        shoesImage = findViewById(R.id.imageViewShoes);
+        mouthImage = findViewById(R.id.imageViewMouth);
+        mustacheImage = findViewById(R.id.imageViewMustache);
+        eyesImage = findViewById(R.id.imageViewEyes);
+        eyebrowsImage = findViewById(R.id.imageViewEyebrows);
 
 
     }
